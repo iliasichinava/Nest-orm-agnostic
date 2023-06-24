@@ -1,0 +1,2 @@
+export const SEQUELIZE_TOKEN = "SEQUELIZE_TOKEN";
+export const TYPEORM_TOKEN = "TYPEORM_TOKEN";

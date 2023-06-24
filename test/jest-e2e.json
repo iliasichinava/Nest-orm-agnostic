@@ -1,0 +1,25 @@
+{
+  "moduleFileExtensions": [
+    "js",
+    "json",
+    "ts"
+  ],
+  "rootDir": ".",
+  "testEnvironment": "node",
+  "testRegex": ".e2e-spec.ts$",
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "moduleNameMapper": {
+    "@app/redis/(.*)": "<rootDir>/../libs/redis/src/$1",
+    "@app/redis": "<rootDir>/../libs/redis/src",
+    "@app/postgre/(.*)": "<rootDir>/../libs/postgre/src/$1",
+    "@app/postgre": "<rootDir>/../libs/postgre/src",
+    "@app/orm-repositories/(.*)": "<rootDir>/../libs/orm-repositories/src/$1",
+    "@app/orm-repositories": "<rootDir>/../libs/orm-repositories/src",
+    "@app/typeorm/(.*)": "<rootDir>/../libs/typeorm/src/$1",
+    "@app/typeorm": "<rootDir>/../libs/typeorm/src",
+    "@app/sequelize/(.*)": "<rootDir>/../libs/sequelize/src/$1",
+    "@app/sequelize": "<rootDir>/../libs/sequelize/src"
+  }
+}
