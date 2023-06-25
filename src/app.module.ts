@@ -4,7 +4,6 @@ import { AppService } from './app.service';
 import { RedisModule } from '@app/redis';
 import { PostgreModule } from '@app/postgre';
 import { ORM } from 'types/enums';
-import { UserTypeormEntity } from '@app/typeorm/user.typeorm.entity';
 
 @Module({
   imports: [
@@ -15,8 +14,7 @@ import { UserTypeormEntity } from '@app/typeorm/user.typeorm.entity';
       port: 5432,
       username: 'postgres',
       password: 'iliamagaria',
-      database: 'postgres~',
-      entities: [UserTypeormEntity],
+      database: 'postgres',
       synchronize: true
     })
   ],

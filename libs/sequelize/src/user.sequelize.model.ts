@@ -1,5 +1,5 @@
 import { Column, DataType, Model, PrimaryKey, Table } from "sequelize-typescript";
-import { Entity } from "../../../types/interfaces";
+import { Entity } from "types/interfaces";
 
 @Table
 export class UserSequelizeModel extends Model implements Entity {
