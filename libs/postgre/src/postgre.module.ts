@@ -22,7 +22,12 @@ import { TypeOrmRepository } from '../../typeorm/src/typeorm.repository';
 import { SequelizeRepository } from '../../sequelize/src/sequelize.repository';
 
 @Module({
-  imports: [TypeormModule, SequelizeOrmModule],
+  imports: [
+    TypeormModule, 
+    SequelizeOrmModule, 
+    // TypeOrmModule.forFeature([UserTypeormEntity])
+    // SequelizeModule.forFeature([UserSequelizeModel])
+  ],
   providers: [TypeOrmRepository, SequelizeRepository, PostgreService],
   exports: [PostgreService]
 })
@@ -53,7 +58,7 @@ export class PostgreModule {
       module: PostgreModule,
       imports: [ormModule, ormFeatureModule],
       providers: [ormProvider, PostgreService],
-      exports: [PostgreService],
+      exports: [PostgreService]
     };
   }
 }

@@ -6,6 +6,6 @@ import { UserSequelizeModel } from './user.sequelize.model';
 @Module({
   imports: [SequelizeOrmModule.forFeature([UserSequelizeModel])],
   providers: [SequelizeRepository],
-  exports: [SequelizeRepository],
+  exports: [SequelizeRepository]
 })
 export class SequelizeModule {}

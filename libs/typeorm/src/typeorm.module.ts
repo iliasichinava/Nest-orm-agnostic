@@ -6,6 +6,6 @@ import { TypeOrmRepository } from './typeorm.repository';
 @Module({
   imports: [TypeOrmModule.forFeature([UserTypeormEntity])],
   providers: [TypeOrmRepository],
-  exports: [TypeOrmRepository],
+  exports: [TypeOrmRepository]
 })
 export class TypeormModule {}

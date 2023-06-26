@@ -8,6 +8,7 @@ import { ORM } from 'types/enums';
 @Module({
   imports: [
     RedisModule,
+    PostgreModule,
     PostgreModule.forRoot(ORM.TYPEORM, {
       type: 'postgres',
       host: 'localhost',
