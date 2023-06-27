@@ -24,7 +24,7 @@ import { SequelizeRepository } from '../../sequelize/src/sequelize.repository';
 @Module({
   imports: [
     TypeormModule, 
-    SequelizeOrmModule, 
+    SequelizeOrmModule,
     // TypeOrmModule.forFeature([UserTypeormEntity])
     // SequelizeModule.forFeature([UserSequelizeModel])
   ],
